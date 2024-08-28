@@ -230,4 +230,9 @@ for (let ano in Escola) {
 }
 
 // Mostrar o resultado
-console.log("O aluno com a melhor média é " + melhorAluno + " com a média de " + melhorNota);
+console.log(
+  "O aluno com a melhor média é " +
+    melhorAluno +
+    " com a média de " +
+    melhorNota
+);
