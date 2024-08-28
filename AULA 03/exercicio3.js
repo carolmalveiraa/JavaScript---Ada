@@ -11,7 +11,7 @@ for (let i = 1; i <= 5; i++) {
   console.log(piramide);
 }
 
-console.log("");
+console.log(" ");
 
 // Agora tente criar o inverso:
 // 12345
