@@ -95,80 +95,139 @@ const Escola = {
   ],
 };
 
+// let melhorNota = 0;
+// let melhorAluno = "";
+
+// for (let i = 0; i < Escola.primeiroAno.length; i++) {
+//     const aluno = Escola.primeiroAno[i];
+//     const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
+//     if (media > melhorNota) {
+//         melhorNota = media;
+//         melhorAluno = aluno.nome;
+//     }
+//     }
+// for (let i = 0; i < Escola.segundoAno.length; i++) {
+//     const aluno = Escola.segundoAno[i];
+//     const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
+//     if (media > melhorNota) {
+//         melhorNota = media;
+//         melhorAluno = aluno.nome;
+//     }
+//     }
+// for (let i = 0; i < Escola.terceiroAno.length; i++) {
+//     const aluno = Escola.terceiroAno[i];
+//     const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
+//     if (media > melhorNota) {
+//         melhorNota = media;
+//         melhorAluno = aluno.nome;
+//     }
+//     }
+// for (let i = 0; i < Escola.quartoAno.length; i++) {
+//     const aluno = Escola.quartoAno[i];
+//     const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
+//     if (media > melhorNota) {
+//         melhorNota = media;
+//         melhorAluno = aluno.nome;
+//     }
+//     }
+// for (let i = 0; i < Escola.quintoAno.length; i++) {
+//     const aluno = Escola.quintoAno[i];
+//     const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
+//     if (media > melhorNota) {
+//         melhorNota = media;
+//         melhorAluno = aluno.nome;
+//     }
+//     }
+// for (let i = 0; i < Escola.sextoAno.length; i++) {
+//     const aluno = Escola.sextoAno[i];
+//     const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
+//     if (media > melhorNota) {
+//         melhorNota = media;
+//         melhorAluno = aluno.nome;
+//     }
+//     }
+// for (let i = 0; i < Escola.setimoAno.length; i++) {
+//     const aluno = Escola.setimoAno[i];
+//     const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
+//     if (media > melhorNota) {
+//         melhorNota = media;
+//         melhorAluno = aluno.nome;
+//     }
+//     }
+// for (let i = 0; i < Escola.oitavoAno.length; i++) {
+//     const aluno = Escola.oitavoAno[i];
+//     const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
+//     if (media > melhorNota) {
+//         melhorNota = media;
+//         melhorAluno = aluno.nome;
+//     }
+//     }
+// for (let i = 0; i < Escola.nonoAno.length; i++) {
+//     const aluno = Escola.nonoAno[i];
+//     const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
+//     if (media > melhorNota) {
+//         melhorNota = media;
+//         melhorAluno = aluno.nome;
+//     }
+//     }
+
+// console.log(`O aluno com a melhor nota é ${melhorAluno} com a média de ${melhorNota}`);
+
+// let melhorNota = 0;
+// let melhorAluno = "";
+
+// // Combina todos os anos em um único array
+// const todosAlunos = [].concat(
+//   Escola.primeiroAno,
+//   Escola.segundoAno,
+//   Escola.terceiroAno,
+//   Escola.quartoAno,
+//   Escola.quintoAno,
+//   Escola.sextoAno,
+//   Escola.setimoAno,
+//   Escola.oitavoAno,
+//   Escola.nonoAno
+// );
+
+// for (const aluno of todosAlunos) {
+//   const media =
+//     aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
+//   if (media > melhorNota) {
+//     melhorNota = media;
+//     melhorAluno = aluno.nome;
+//   }
+// }
+
+// console.log(
+//   `O aluno com a melhor nota é ${melhorAluno} com a média de ${melhorNota}`
+// );
+
+// Variáveis para armazenar a melhor nota e o melhor aluno
 let melhorNota = 0;
 let melhorAluno = "";
 
-for (let i = 0; i < Escola.primeiroAno.length; i++) {
-    const aluno = Escola.primeiroAno[i];
-    const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
-    if (media > melhorNota) {
-        melhorNota = media;
-        melhorAluno = aluno.nome;
-    }
-    }
-for (let i = 0; i < Escola.segundoAno.length; i++) {
-    const aluno = Escola.segundoAno[i];
-    const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
-    if (media > melhorNota) {
-        melhorNota = media;
-        melhorAluno = aluno.nome;
-    }
-    }
-for (let i = 0; i < Escola.terceiroAno.length; i++) {
-    const aluno = Escola.terceiroAno[i];
-    const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
-    if (media > melhorNota) {
-        melhorNota = media;
-        melhorAluno = aluno.nome;
-    }
-    }
-for (let i = 0; i < Escola.quartoAno.length; i++) {
-    const aluno = Escola.quartoAno[i];
-    const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
-    if (media > melhorNota) {
-        melhorNota = media;
-        melhorAluno = aluno.nome;
-    }
-    }
-for (let i = 0; i < Escola.quintoAno.length; i++) {
-    const aluno = Escola.quintoAno[i];
-    const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
-    if (media > melhorNota) {
-        melhorNota = media;
-        melhorAluno = aluno.nome;
-    }
-    }
-for (let i = 0; i < Escola.sextoAno.length; i++) {
-    const aluno = Escola.sextoAno[i];
-    const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
-    if (media > melhorNota) {
-        melhorNota = media;
-        melhorAluno = aluno.nome;
-    }
-    }
-for (let i = 0; i < Escola.setimoAno.length; i++) {
-    const aluno = Escola.setimoAno[i];
-    const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
-    if (media > melhorNota) {
-        melhorNota = media;
-        melhorAluno = aluno.nome;
-    }
-    }
-for (let i = 0; i < Escola.oitavoAno.length; i++) {
-    const aluno = Escola.oitavoAno[i];
-    const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
-    if (media > melhorNota) {
-        melhorNota = media;
-        melhorAluno = aluno.nome;
-    }
-    }
-for (let i = 0; i < Escola.nonoAno.length; i++) {
-    const aluno = Escola.nonoAno[i];
-    const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
-    if (media > melhorNota) {
-        melhorNota = media;
-        melhorAluno = aluno.nome;
-    }
+// Iterar sobre cada ano na escola
+for (let ano in Escola) {
+  // Iterar sobre cada aluno no ano atual
+  for (let i = 0; i < Escola[ano].length; i++) {
+    let aluno = Escola[ano][i];
+    let somaNotas = 0;
+
+    // Calcular a soma das notas do aluno
+    for (let j = 0; j < aluno.notas.length; j++) {
+      somaNotas += aluno.notas[j];
     }
 
-console.log(`O aluno com a melhor nota é ${melhorAluno} com a média de ${melhorNota}`);
+    // Calcular a média das notas do aluno
+    let media = somaNotas / aluno.notas.length;
+
+    // Verificar se essa é a melhor média encontrada
+    if (media > melhorNota) {
+      melhorNota = media.toFixed(1);
+      melhorAluno = aluno.nome;
+    }
+  }
+}
+
+// Mostrar o resultado
+console.log("O aluno com a melhor média é " + melhorAluno + " com a média de " + melhorNota);
