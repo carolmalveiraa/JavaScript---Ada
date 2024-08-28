@@ -13,11 +13,10 @@
 let texto =
   "Ut interdum tellus sit amet arcu viverra facilisis. Mauris diam magna, condimentum ac justo nec, rhoncus iaculis odio. Sed tincidunt lacus ut risus laoreet sagittis. Curabitur tristique egestas libero, nec vulputate ligula pellentesque auctor. Mauris vitae est lacinia, condimentum felis eget, consequat eros. Proin tempor ligula felis, sit amet malesuada purus viverra sit amet. Nunc lobortis porta est a mattis.";
 
-let palavras = texto.split(" ");
+let palavras = texto.replace(/[.,]/g, "").toLowerCase().split(/\s+/);
 let contador = new Map();
 
-for (let i = 0; i < palavras.length; i++) {
-  const palavra = palavras[i];
+for (let palavra of palavras) {
   if (contador.has(palavra)) {
     contador.set(palavra, contador.get(palavra) + 1);
   } else {
@@ -25,4 +24,16 @@ for (let i = 0; i < palavras.length; i++) {
   }
 }
 
-console.log(contador.get("texto"));
+let palavraMaisRepetida = "";
+let maxContagem = 0;
+
+for (let [palavra, contagem] of contador) {
+  if (contagem > maxContagem) {
+    maxContagem = contagem;
+    palavraMaisRepetida = palavra;
+  }
+}
+
+console.log(
+  `A palavra mais repetida é '${palavraMaisRepetida}' com ${maxContagem} ocorrências.`
+);
