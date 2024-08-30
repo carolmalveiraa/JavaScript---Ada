@@ -1,14 +1,6 @@
 // Exercício Desafiador:
 // Escreva um programa em JavaScript que verifica se um número é um palíndromo.
 
-// Pedir ao Prompt
-const readline = require("readline");
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-    });
-
 let numero = Number(prompt("Digite um número:"));
 
 if (isNaN(numero)) {

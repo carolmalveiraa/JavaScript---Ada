@@ -1,14 +1,6 @@
 // Exercício Intermediário:
 // Escreva um programa em JavaScript que verifica se um número é divisível por 3 e por 5 ao mesmo tempo
 
-// Pedir ao Prompt
-const readline = require("readline");
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-    });
-
 let numero = Number(prompt("Digite um número:"));
 
 if (isNaN(numero)) {
