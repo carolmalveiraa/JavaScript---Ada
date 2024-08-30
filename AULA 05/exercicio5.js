@@ -5,33 +5,40 @@
 // **Exemplo de uso:** `verificarDiaSemana(3)` deve retornar "Quarta-feira, Dia útil".
 
 // **Dica:** Utilize os valores de 1 a 7 para representar os dias da semana, sendo 1 para domingo, 2 para segunda-feira e assim por diante.
-
 let verificarDiaSemana = (dia) => {
-    switch (dia) {
-        case 1:
-            console.log("Domingo, Fim de semana");
-            break;
-        case 2:
-            console.log("Segunda-feira, Dia útil");
-            break;
-        case 3:
-            console.log("Terça-feira, Dia útil");
-            break;
-        case 4:
-            console.log("Quarta-feira, Dia útil");
-            break;
-        case 5:
-            console.log("Quinta-feira, Dia útil");
-            break;
-        case 6:
-            console.log("Sexta-feira, Dia útil");
-            break;
-        case 7:
-            console.log("Sábado, Fim de semana");
-            break;
-        default:
-            console.log("Número inválido");
-    }
-}
+  let diaSemana;
+  switch (dia) {
+    case 1:
+      diaSemana = "Domingo";
+      break;
+    case 2:
+      diaSemana = "Segunda-feira";
+      break;
+    case 3:
+      diaSemana = "Terça-feira";
+      break;
+    case 4:
+      diaSemana = "Quarta-feira";
+      break;
+    case 5:
+      diaSemana = "Quinta-feira";
+      break;
+    case 6:
+      diaSemana = "Sexta-feira";
+      break;
+    case 7:
+      diaSemana = "Sábado";
+      break;
+    default:
+      return "Número inválido";
+  }
 
-verificarDiaSemana(3); // Terça-feira, Dia útil 
+  if (dia === 1 || dia === 7) {
+    return `${diaSemana}, Fim de semana`;
+  } else {
+    return `${diaSemana}, Dia útil`;
+  }
+};
+
+// Exemplo de uso
+console.log(verificarDiaSemana(7));
