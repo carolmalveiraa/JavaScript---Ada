@@ -1,14 +1,44 @@
-// **Exercício Moderado**:
-// Escreva um programa em JavaScript que verifica se um número é par ou ímpar.
+// **Exercício Moderado:**
+// Escreva um programa em JavaScript que recebe um número de 1 a 12 e retorna o mês correspondente. Caso seja um número inválido retorna "Número inválido.”
 
-let numero = Number(prompt("Digite um número:"));
-
-if (isNaN(numero)) {
-  console.log("Por favor, digite um número válido.");
-} else {
-  if (numero % 2 === 0) {
-    console.log("O número é par");
-  } else {
-    console.log("O número é ímpar");
-  }
+let mes = 1;
+switch (mes) {
+  case 1:
+    console.log("Janeiro");
+    break;
+  case 2:
+    console.log("Fevereiro");
+    break;
+  case 3:
+    console.log("Março");
+    break;
+  case 4:
+    console.log("Abril");
+    break;
+  case 5:
+    console.log("Maio");
+    break;
+  case 6:
+    console.log("Junho");
+    break;
+  case 7:
+    console.log("Julho");
+    break;
+  case 8:
+    console.log("Agosto");
+    break;
+  case 9:
+    console.log("Setembro");
+    break;
+  case 10:
+    console.log("Outubro");
+    break;
+  case 11:
+    console.log("Novembro");
+    break;
+  case 12:
+    console.log("Dezembro");
+    break;
+  default:
+    console.log("Número inválido");
 }

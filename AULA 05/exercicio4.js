@@ -1,20 +1,17 @@
-// **Exercício Avançado:**
-// Crie um programa em JavaScript que implemente uma calculadora básica. A função `calculadora` receberá dois números como parâmetro e um terceiro parâmetro indicando a ação a ser executada. As ações possíveis são: "somar", "subtrair", "dividir" e "multiplicar". O resultado da operação deve ser retornado pela função.
-// **Exemplo de uso:** `calculadora(5, 3, "somar")` deve retornar 8.
+// Exercício Avançado:
+// Escreva um programa em JavaScript que calcule e imprima os primeiros N termos da sequência de Fibonacci, onde N é um número fornecido pelo usuário, utilizando um loop while.
 
-let calculadora = (num1, num2, operacao) => {
-  switch (operacao) {
-    case "somar":
-      return num1 + num2;
-    case "subtrair":
-      return num1 - num2;
-    case "dividir":
-    return (num1 / num2).toFixed(2);
-    case "multiplicar":
-      return num1 * num2;
-    default:
-      return "Operação inválida";
-  }
-};
+let n = 10;
+let i = 1;
+let j = 0;
+let k = 0;
 
-console.log(calculadora(5, 3, "dividir"));
+console.log("Os primeiros 10 termos da sequência de Fibonacci são:");
+
+while (n > 0) {
+    console.log(k);
+    k = i + j;
+    i = j;
+    j = k;
+    n--;
+    }

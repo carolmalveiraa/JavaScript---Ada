@@ -1,14 +1,16 @@
-// Exercício Intermediário:
-// Escreva um programa em JavaScript que verifica se um número é divisível por 3 e por 5 ao mesmo tempo
+// **Exercício Intermediário:**
+// Escreva um programa em JavaScript que recebe uma letra do alfabeto e retorna se é uma vogal ou uma consoante.
 
-let numero = Number(prompt("Digite um número:"));
+let alfabeto = "a";
 
-if (isNaN(numero)) {
-    console.log("Por favor, digite um número válido.");
-} else {
-    if (numero % 3 === 0 && numero % 5 === 0) {
-        console.log("O número é divisível por 3 e por 5 ao mesmo tempo");
-    } else {
-        console.log("O número não é divisível por 3 e por 5 ao mesmo tempo");
+switch (alfabeto) {
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        console.log("Vogal");
+        break;
+    default:
+        console.log("Consoante");
     }
-}

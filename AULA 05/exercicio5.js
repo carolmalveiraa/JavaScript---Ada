@@ -1,44 +1,55 @@
-// **Exercício Desafiado**
-// Escreva um programa em JavaScript que recebe um número de 1 a 7 e retorna o dia da semana correspondente.
-// Além disso, implemente uma verificação adicional utilizando `if-else` para retornar "Fim de semana" caso o número seja 1 ou 7 (domingo ou sábado), e "Dia útil" caso contrário.
+// 5. **Exercicios Desafiador:**
 
-// **Exemplo de uso:** `verificarDiaSemana(3)` deve retornar "Quarta-feira, Dia útil".
+//     Escreva um programa em JavaScript cria uma lista de contatos, com dados inputados pelo usuário, dados para salvar:
 
-// **Dica:** Utilize os valores de 1 a 7 para representar os dias da semana, sendo 1 para domingo, 2 para segunda-feira e assim por diante.
-let verificarDiaSemana = (dia) => {
-  let diaSemana;
-  switch (dia) {
-    case 1:
-      diaSemana = "Domingo";
-      break;
-    case 2:
-      diaSemana = "Segunda-feira";
-      break;
-    case 3:
-      diaSemana = "Terça-feira";
-      break;
-    case 4:
-      diaSemana = "Quarta-feira";
-      break;
-    case 5:
-      diaSemana = "Quinta-feira";
-      break;
-    case 6:
-      diaSemana = "Sexta-feira";
-      break;
-    case 7:
-      diaSemana = "Sábado";
-      break;
-    default:
-      return "Número inválido";
-  }
+//     - Nome
+//     - Telefone
+//     - Idade
+//     - Profissão
 
-  if (dia === 1 || dia === 7) {
-    return `${diaSemana}, Fim de semana`;
-  } else {
-    return `${diaSemana}, Dia útil`;
-  }
-};
+//     O usuário deve inputar dados de 5 contatos.
 
-// Exemplo de uso
-console.log(verificarDiaSemana(7));
+//     Ao final o programa deve mostrar uma lista com os contatos.
+
+let contatos = [];
+
+contatos.push({
+  nome: "Carol",
+  telefone: "9999-0000",
+  idade: "23",
+  profissao: "Dev",
+});
+contatos.push({
+  nome: "Lucas",
+  telefone: "8888-1111",
+  idade: "30",
+  profissao: "Designer",
+});
+contatos.push({
+  nome: "Júlia",
+  telefone: "7777-2222",
+  idade: "28",
+  profissao: "Gerente",
+});
+contatos.push({
+  nome: "Emanuella",
+  telefone: "6666-2222",
+  idade: "23",
+  profissao: "RH",
+});
+contatos.push({
+  nome: "Cristina",
+  telefone: "5555-2222",
+  idade: "23",
+  profissao: "Administração",
+});
+
+console.log("Lista de contatos:");
+for (let i = 0; i < contatos.length; i++) {
+  console.log(`Contato ${i + 1}:`);
+  console.log(`Nome: ${contatos[i].nome}`);
+  console.log(`Telefone: ${contatos[i].telefone}`);
+  console.log(`Idade: ${contatos[i].idade}`);
+  console.log(`Profissão: ${contatos[i].profissao}`);
+  console.log();
+}

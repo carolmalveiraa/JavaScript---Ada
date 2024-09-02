@@ -1,16 +1,44 @@
-// Exercício Desafiador:
-// Escreva um programa em JavaScript que verifica se um número é um palíndromo.
+// **Exercício Desafiado**
+// Escreva um programa em JavaScript que recebe um número de 1 a 7 e retorna o dia da semana correspondente.
+// Além disso, implemente uma verificação adicional utilizando `if-else` para retornar "Fim de semana" caso o número seja 1 ou 7 (domingo ou sábado), e "Dia útil" caso contrário.
 
-let numero = Number(prompt("Digite um número:"));
+// **Exemplo de uso:** `verificarDiaSemana(3)` deve retornar "Quarta-feira, Dia útil".
 
-if (isNaN(numero)) {
-    console.log("Por favor, digite um número válido.");
-} else {
-    let numeroString = numero.toString();
-    let numeroInvertido = numeroString.split("").reverse().join("");
-    if (numeroString === numeroInvertido) {
-        console.log("O número é um palíndromo");
-    } else {
-        console.log("O número não é um palíndromo");
-    }
-}
+// **Dica:** Utilize os valores de 1 a 7 para representar os dias da semana, sendo 1 para domingo, 2 para segunda-feira e assim por diante.
+let verificarDiaSemana = (dia) => {
+  let diaSemana;
+  switch (dia) {
+    case 1:
+      diaSemana = "Domingo";
+      break;
+    case 2:
+      diaSemana = "Segunda-feira";
+      break;
+    case 3:
+      diaSemana = "Terça-feira";
+      break;
+    case 4:
+      diaSemana = "Quarta-feira";
+      break;
+    case 5:
+      diaSemana = "Quinta-feira";
+      break;
+    case 6:
+      diaSemana = "Sexta-feira";
+      break;
+    case 7:
+      diaSemana = "Sábado";
+      break;
+    default:
+      return "Número inválido";
+  }
+
+  if (dia === 1 || dia === 7) {
+    return `${diaSemana}, Fim de semana`;
+  } else {
+    return `${diaSemana}, Dia útil`;
+  }
+};
+
+// Exemplo de uso
+console.log(verificarDiaSemana(7));

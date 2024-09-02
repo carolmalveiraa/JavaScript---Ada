@@ -1,15 +1,20 @@
-// Exercício Avançado:
-// Escreva um programa em JavaScript que verifica se um ano é bissexto.
-// Dica: um ano bissexto é divisível por 4, mas não por 100, a menos que também seja divisível por 400.
+// **Exercício Avançado:**
+// Crie um programa em JavaScript que implemente uma calculadora básica. A função `calculadora` receberá dois números como parâmetro e um terceiro parâmetro indicando a ação a ser executada. As ações possíveis são: "somar", "subtrair", "dividir" e "multiplicar". O resultado da operação deve ser retornado pela função.
+// **Exemplo de uso:** `calculadora(5, 3, "somar")` deve retornar 8.
 
-let ano = Number(prompt("Digite um ano:"));
+let calculadora = (num1, num2, operacao) => {
+  switch (operacao) {
+    case "somar":
+      return num1 + num2;
+    case "subtrair":
+      return num1 - num2;
+    case "dividir":
+    return (num1 / num2).toFixed(2);
+    case "multiplicar":
+      return num1 * num2;
+    default:
+      return "Operação inválida";
+  }
+};
 
-if (isNaN(ano)) {
-    console.log("Por favor, digite um ano válido.");
-} else {
-    if (ano % 4 === 0 && ano % 100 !== 0 || ano % 400 === 0) {
-        console.log("O ano é bissexto");
-    } else {
-        console.log("O ano não é bissexto");
-    }
-}
+console.log(calculadora(5, 3, "dividir"));

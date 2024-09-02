@@ -1,18 +1,25 @@
+// <!-- ## Praticando com `switch/case`
+
 // **Exercício Fácil:**
-// Escreva um programa em JavaScript que verifica se um número é positivo, negativo ou igual a zero.
+// Escreva um programa em JavaScript que recebe uma cor em inglês e retorna o seu nome em português. As cores podem ser: "red" (vermelho), "blue" (azul), "green" (verde), "yellow" (amarelo) e "black" (preto). -->
 
-let numero = Number(prompt("Digite um número:"));
-
-if (isNaN(numero)) {
-  console.log("Por favor, digite um número válido.");
-} else {
-  if (numero > 0) {
-    console.log("O número é positivo");
-  } else if (numero < 0) {
-    console.log("O número é negativo");
-  } else {
-    console.log("O número é igual a zero");
-  }
+let cor = "red";
+switch (cor) {
+  case "red":
+    console.log("Vermelho");
+    break;
+  case "blue":
+    console.log("Azul");
+    break;
+  case "green":
+    console.log("Verde");
+    break;
+  case "yellow":
+    console.log("Amarelo");
+    break;
+  case "black":
+    console.log("Preto");
+    break;
+  default:
+    console.log("Cor não encontrada");
 }
-
-console.log("Fim do programa");
